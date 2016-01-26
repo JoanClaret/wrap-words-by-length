@@ -7,7 +7,7 @@
  * @version   1.0
  *
  * Licensed under The MIT License (MIT).
- * Copyright (c) 2015 Joan Claret
+ * Copyright (c) 2016 Joan Claret
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal

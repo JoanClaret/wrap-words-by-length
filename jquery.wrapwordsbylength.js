@@ -1,5 +1,5 @@
 /**
- * Wrap words by length plugin for jQuery created by Joan Claret 
+ * Wrap words by length plugin for jQuery created by Joan Claret
  *
  * @copyright Copyright 2016 Joan Claret
  * @license   MIT
@@ -32,32 +32,32 @@
 
   'use strict';
 
-    var wrapWordsByLength =
-  
-        $.fn.wrapWordsByLength = function( options ) {
-     
-            options = options || {};
+  var wrapWordsByLength =
 
-            // Default options
-            var settings = $.extend({
-                charLimit: "15",
-                wrapClass: "word-break"
-            }, options );
-            
-            return this.each(function() {
-                var el = $(this),            
-                    str = el.text(),
-                    words = str.split(" ");
+    $.fn.wrapWordsByLength = function( options ) {
 
-                for(var i=0; i<words.length; i++){            
-                    if(words[i].length > settings.charLimit){
-                        el.html(el.html().replace(words[i],'<span class="'+settings.wrapClass+'">'+words[i]+'</span>'));                
-                    }
-                } 
-            });   
-        }; 
-    };
+      options = options || {};
 
+      // Default options
+      var settings = $.extend({
+          charLimit: "15",
+          wrapClass: "word-break"
+      }, options );
+
+      return this.each(function() {
+        var el = $(this),
+          str = el.text(),
+          words = str.split(" ")
+        ;
+
+        for(var i=0; i<words.length; i++){
+          if(words[i].length > settings.charLimit){
+            el.html(el.html().replace(words[i],'<span class="'+settings.wrapClass+'">'+words[i]+'</span>'));
+          }
+        }
+      });
+    }
+  ;
 })(window.jQuery || window.$, document, window);
 
 
@@ -65,5 +65,5 @@
  * Export as a CommonJS module
  */
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = wrapWordsByLength;
+  module.exports = wrapWordsByLength;
 }

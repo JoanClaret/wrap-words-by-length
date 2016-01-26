@@ -2,7 +2,7 @@ Wrap words by length jQuery plugin
 ========================================
 A jQuery plugin which wraps words larger than a given limit into a span.
 
-CAUTION: This plugin is in beta and does not work as expected. stay tunend for nex updates.
+**CAUTION: This plugin is in beta and does not work as expected. stay tunend for nex updates.**
 
 Online demo
 -----------
